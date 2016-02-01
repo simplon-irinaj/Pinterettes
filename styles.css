@@ -1,0 +1,123 @@
+* {
+font-family: 'Poiret One', cursive;
+margin: 0;
+padding: 0;
+}
+
+/*<--------------------index.php-------------------------------------------->*/
+
+
+#accueil, #titre, #inscription {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.login_pw {
+  padding: 0.5em;
+  color: #000080;
+  font-size: 1.5em;
+}
+
+.login_button {
+    padding: 1em;
+    border: solid 1px #000080;
+    background-color: #FFF;
+    width: auto;
+}
+
+#bouton {
+  border: solid 1px #000080;
+  background-color: #FFF;
+}
+
+
+/*<--------------------accueil.php-------------------------------------------->*/
+
+#header {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5em;
+  background-color: #000080;
+  position: fixed;
+}
+
+.container_images {
+  display: inline-flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center; /*ajouter ceci car par défaut les images sont dans leur max-width*/
+  margin-top: 5em;
+  margin-left: 6em;
+}
+
+.images {
+  max-width: 16em;
+  border: solid 10px #000080;
+}
+
+.container_images p {
+  color: #000080;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#titre_accueil {
+  color: #FFF;
+  margin-bottom: 0.2em;
+}
+
+#search {
+  margin-top: 0.8em;
+}
+
+
+#input_search {
+  padding: 0.2em;
+
+}
+
+
+#hello {
+  color:#3333CC;
+  margin-top: 0.8em;
+}
+
+#hello:hover {
+  color: #FFF;
+}
+
+
+/*<--------------------profil.php-------------------------------------------->*/
+
+#form_profil {
+  border: solid 1px #000080;
+}
+
+#header_profil {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0.5em;
+  background-color: #000080;
+  position: fixed;
+  color: #FFF;
+}
+
+#accueil {
+  color:#3333CC;
+  padding-top: 0.6em;
+}
+
+#accueil:hover {
+  color: #FFF;
+}
+
+#bouton_deco {
+  border: solid 1px #FFF;
+  background-color: #FFF;
+}
