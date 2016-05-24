@@ -11,6 +11,7 @@ padding: 0;
   display: flex;
   justify-content: center;
   padding: 1em;
+  font-weight: bold;
 }
 
 .login_pw {
@@ -24,12 +25,21 @@ padding: 0;
     border: solid 1px #000080;
     background-color: #FFF;
     width: auto;
+    font-weight: bold;
 }
 
 #bouton {
   border: solid 1px #000080;
   background-color: #FFF;
+  font-weight: bold;
 }
+
+#bouton:hover {
+  background-color: #000080;
+  color: #FFF;
+  cursor: pointer;
+}
+
 
 
 /*<--------------------accueil.php-------------------------------------------->*/
@@ -38,7 +48,8 @@ padding: 0;
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0.5em;
+  align-items: center;
+  padding: 1vh;
   background-color: #000080;
   position: fixed;
 }
@@ -57,6 +68,11 @@ padding: 0;
   border: solid 10px #000080;
 }
 
+.texte {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 .container_images p {
   color: #000080;
 }
@@ -72,19 +88,19 @@ a {
 }
 
 #search {
-  margin-top: 0.8em;
+  margin-right: 5.5vw;
 }
 
 
 #input_search {
   padding: 0.2em;
-
+  font-weight: bold;
 }
 
 
 #hello {
-  color:#3333CC;
-  margin-top: 0.8em;
+  color:#00CCFF;
+  margin-left:5.5vw;
 }
 
 #hello:hover {
@@ -95,22 +111,52 @@ a {
 /*<--------------------profil.php-------------------------------------------->*/
 
 #form_profil {
-  border: solid 1px #000080;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left:5.5vw;
+  padding-top:10vh;
+  width: 20vw;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+  font-weight: bold;
+  color: #000080;
+  line-height: 3vh;
+}
+
+.style_form {
+  border: 0;
+  background-color: #000080;
+  color: #FFF;
+  padding: 0.5vw;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.style_formTitle {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.style_choice {
+  border:0;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
 #header_profil {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0.5em;
+  align-items: center;
   background-color: #000080;
   position: fixed;
   color: #FFF;
 }
 
 #accueil {
-  color:#3333CC;
-  padding-top: 0.6em;
+  color:#00CCFF;
+  margin-left:5vw;
 }
 
 #accueil:hover {
@@ -120,4 +166,9 @@ a {
 #bouton_deco {
   border: solid 1px #FFF;
   background-color: #FFF;
+  padding-right:0vw;
+  margin-right:5.5vw;
+  width: 5vw;
+  height: 5vh;
+  font-weight: bold;
 }

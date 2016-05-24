@@ -10,25 +10,25 @@ session_start();
   <title>Pinterettes</title>
   <link rel="stylesheet" href="styles.css" media="screen" charset="utf-8">
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <link rel="icon" href="images/patin.ico" />
+  <link rel="icon" href="images/square.ico" />
 </head>
 <body>
   <header id="header_profil">
-  <h1>
-    <?php
-    echo $_SESSION['pseudo'];
-    ?>
-  </h1>
-  <h3><a id="accueil" href="accueil.php">Accueil</a></h3>
-  <button id="bouton_deco"><a href="index.php">Déconnexion</a></button>
+    <h3><a id="accueil" href="accueil.php">Accueil</a></h3>
+    <h1>
+      <?php
+      echo $_SESSION['pseudo'];
+      ?>
+    </h1>
+    <button id="bouton_deco"><a href="index.php">Déconnexion</a></button>
+  </header>
   <form id="form_profil" action="upload.php" method="post" enctype="multipart/form-data">
     <input type="hidden" name="MAX_FILE_SIZE" value="2000000"/>
-    <input type="file" name="images" value=""/>
+    <input class="style_choice" type="file" name="images" value=""/>
     <label> Votre image ne doit pas dépasser 2Mo </label>
-    <textarea name="titreImage" rows="1" cols="34">Donnez un titre à votre image :</textarea>
-    <input type="submit" name="submit" value="Envoyer"/>
+    <textarea class="style_formTitle" name="titreImage" rows="1" cols="34" >Donnez un titre à votre image :</textarea>
+    <input class="style_form" type="submit" name="submit" value="Envoyer"/>
   </form>
-</header>
 
 
 

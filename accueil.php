@@ -1,3 +1,5 @@
+
+
 <?php
 session_start();
 
@@ -7,10 +9,10 @@ session_start();
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Bienvenue sur Pinterettes</title>
+  <title>Bienvenue sur Canvas</title>
   <link rel="stylesheet" href="styles.css" media="screen" charset="utf-8">
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <link rel="icon" href="images/patin.ico" />
+  <link rel="icon" href="images/square.ico" />
 </head>
 <body>
   <header id="header">
@@ -18,10 +20,10 @@ session_start();
       <a href="profil.php" id="hello"><?php echo 'Bonjour '.$_SESSION['pseudo']?></a>
     </h2>
     <h1 id="titre_accueil">
-      Pinterettes, le site des bêtes et du skate (ou des bêtes de skate).
+      Canvas
     </h1>
     <form id="search" method="post">
-      <input id="input_search" type="text" name="search" value="Rechercher"/>
+      <input id="input_search" type="text" name="search" value="Rechercher" onFocus="if(this.value=='Rechercher')this.value='';" onBlur="if(this.value=='')this.value='Rechercher';"/>
     </form>
   </header>
   <div>

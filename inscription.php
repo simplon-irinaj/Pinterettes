@@ -10,9 +10,9 @@ session_start();
   <title>pinterettes</title>
   <link rel="stylesheet" href="styles.css" media="screen" charset="utf-8">
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <link rel="icon" href="images/patin.ico" />
+  <link rel="icon" href="images/square.ico" />
   <body>
-    <h1 id="titre">Inscription à Pinterettes :</h1>
+    <h1 id="titre">Inscription à Canvas :</h1>
     <form id="accueil" action="inscription_bd.php" method="post">
       <label class="login_pw" for="mail">Entrez votre mail </label>
       <input type="text" name="mail" placeholder="Entrez votre mail"/>
